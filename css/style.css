@@ -1,0 +1,507 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@500&family=Poppins&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@500&family=Poppins:wght@400;500&display=swap');
+
+  /* font-family: 'Poppins', sans-serif; */
+
+*{
+    margin:0;
+    padding:0;
+   
+}
+
+  :root{
+
+    --background-color:#b0c6ff;
+    --text-color:#002D6E; 
+    --box-color: #E3E2E6;
+    --circle-color:#D9E2FF;
+  }
+
+
+body{
+    background-color: var(--background-color);
+
+ }
+
+
+ .flex-top{
+   
+    margin-bottom: 2%;
+    display:flex;
+    width:100vw;
+    height:7vh;
+    justify-content: flex-end; 
+}
+
+.settings-circle{
+    height: 13vw;
+    width: 13vw;
+    background-color: var(--circle-color);
+    border-radius: 50%;  
+    display:inline-flexbox; 
+    background-image: url("../media/images/setting.png");
+    background-size:80%;
+    background-repeat: no-repeat;
+    background-position:center;
+    margin: 2%;
+}
+
+.user-circle{
+    height: 13vw;
+    width: 13vw;
+    background-color: var(--circle-color);
+    border-radius: 50%;  
+    display:flex; 
+    background-image: url("../media/images/user.png");
+    background-size:80%;
+    background-repeat: no-repeat;
+    background-position:center;
+    margin: 2%;
+    
+}
+
+.about-circle{
+    height: 13vw;
+    width: 13vw;
+    background-color: var(--circle-color);
+    border-radius: 50%;  
+    display:flex; 
+    background-image: url("../media/images/question.png");
+    background-size:80%;
+    background-repeat: no-repeat;
+    background-position:center;
+    margin: 2%;
+}
+
+.about-circle:active{
+    background-color: var(--box-color);
+}
+
+
+.about{
+    border: none;
+    background-color: transparent;
+    margin-top: 10%;
+}
+
+.flex-bar{
+    flex-direction:row;
+    display: flex;
+    width:100vw;
+    height:15vw;
+}  
+
+.flex-bar h2{
+    padding:2%;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    color: var(--text-color);
+
+}
+
+.flex-bar h2:hover{
+    color:var(--box-color);
+}
+
+.line{
+    height: 1vh;
+    width: 95vw;
+    display:flex;
+    background-color: var(--circle-color);
+    margin-left:1%;
+ }
+
+.flex-img-container{
+width:100vw;
+height:35vh;
+display:flex;
+align-items:center;
+justify-content:space-around;
+flex-direction: column;
+flex-wrap: wrap;
+margin-top:2%;
+}
+
+.pic1{
+    width:36vw;
+    height:35vw;
+    background-color: var(--box-color);
+    margin-left: 5%;
+    border-radius: 10%;
+    display:flex; 
+    background-image: url("../media/images/pure-julia-FufRx_-4hyU-unsplash.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+
+
+
+.pic2{
+    width:36vw;
+    height:35vw;
+    background-color: var(--box-color); 
+    margin-left:5%;
+    border-radius: 10%;
+    background-image: url("../media/images/mandira-banik-g0LkeFqqWhQ-unsplash.jpg");
+    background-size:cover;
+     background-repeat: no-repeat;
+     background-position:center;
+}
+
+.pic3{
+    width:36vw;
+    height:70vw;
+    background-color: var(--box-color);
+    margin-bottom: 2%;
+    margin-right:5%;
+    border-radius:4%;
+    background-image: url("../media/images/daniel-j-schwarz-7-oM8eFUkFQ-unsplash.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+
+.morning{
+    font-family: 'Poppins', sans-serif; 
+    color: var(--text-color);
+    margin-left:-5%;
+    margin-right: 20%;
+    margin-top:-75%;
+    animation:changeMorning 5s infinite;
+    
+}
+
+@keyframes changeMorning
+{
+    0% {color:var(--text-color);} 
+    55%{color: var(--background-color);}
+    100%{color:var(--text-color) ;}
+}
+
+
+.flex-bottom{
+    display:flex;
+    width:100vw;
+    height:90vw;
+    flex-direction: column;
+    align-items: center;
+    margin-top:5%;
+}
+
+.notes{
+    width:85vw;
+    height:38vw;
+   background:var(--box-color);  
+   align-self: center; 
+   border-radius: 4%;
+   margin-top:20%;
+   margin-bottom:30%;
+   margin-right:10%;
+   background-image: url(../media/images/notebook.png);
+   background-size: 20%;
+   background-repeat: no-repeat;
+   background-position: 3%;
+   box-shadow: 0 3px 20px rgb(0 0 0 / 0.2);
+}
+
+.notes h2{
+    margin-left:25%;
+    margin-top:8%;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    color: var(--text-color);
+}
+ 
+
+.flex-audio{
+display:flex;
+width:60vw;
+height:20vw;
+margin-top: -28%;
+margin-left: 42%;
+} 
+
+
+audio::-webkit-media-controls-panel {
+    background-color:var(--box-color);
+}
+
+ audio{
+width:35vw;
+height:5vw;
+}
+
+.sounds{
+    width:85vw;
+    height:30vw;
+    background:var(--box-color);  
+    align-self:center;
+    border-radius:4%;
+    margin-top:40%;
+    margin-right:10%;
+    margin-bottom:13%;
+    box-shadow: 0 3px 20px rgb(0 0 0 / 0.2);
+}
+
+.sounds h2{
+    margin-left:5%;
+    margin-top:5%;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    color: var(--text-color);
+}
+
+
+.bottom-buttons{
+    width:100vw;
+    height:10vh;
+    flex-direction:row;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:-2%;
+}
+
+.new-circle{
+    height: 13vw;
+    width: 13vw;
+    background-color: var(--circle-color);
+    border-radius: 50%;  
+    display:inline-flexbox; 
+    background-image: url("../media/images/story.png");
+    background-size:80%;
+    background-repeat: no-repeat;
+    background-position:center;
+    margin: 2%;
+}
+
+.camera-circle{
+    height: 13vw;
+    width: 13vw;
+    background-color: var(--circle-color);
+    border-radius: 50%;  
+    display:inline-flexbox; 
+    background-image: url("../media/images/camera.png");
+    background-size:80%;
+    background-repeat: no-repeat;
+    background-position:center;
+    margin: 2%;
+}
+
+.speaker-circle{
+    height: 13vw;
+    width: 13vw;
+    background-color: var(--circle-color);
+    border-radius: 50%;  
+    display:inline-flexbox; 
+    background-image: url("../media/images/microphone.png");
+    background-size:80%;
+    background-repeat: no-repeat;
+    background-position:center;
+    margin: 2%;
+}
+
+
+/***************************************DESKTOP VERSION****************************************/
+
+@media screen and (width >=1366px){
+
+.flex-top{
+    width: 90% ;
+    margin-top:1%;
+    margin-left:8%;
+}
+
+
+.settings-circle{
+width:5vw;
+height:5vw;
+background-size: 80%;
+margin:1%;
+}
+
+.about-circle{
+width:5vw;
+height:5vw;
+background-size: 80%;
+margin:1%;
+}
+.about{
+margin-top: 17%;    
+}
+
+
+.user-circle{
+width:5vw;
+height: 5vw;
+background-size:80%;
+margin:1%;
+}
+
+
+.flex-bar h2{
+    font-size:xx-large;
+    }
+
+
+.flex-bar{
+margin-top:-3%;
+height:15vh;
+
+}
+
+.line{
+    width:70vw;
+    margin-bottom:1%;
+}
+
+
+.flex-img-container{
+    height:90vh;
+    width:50vw;
+}
+
+
+
+
+.pic1{
+width:15vw;
+height:14vw;
+margin-left:-40%;
+margin-bottom:40%;
+order:3;
+
+}
+
+.pic2{
+width:15vw;
+height:14vw;
+margin-left:-40%;
+order:2;
+}
+
+.pic3{
+width:20vw;
+height:32vw;
+order: 1;
+margin-left:-13%;
+margin-bottom:40%;
+}
+
+
+.flex-bottom{
+    align-content:flex-end;
+    width:60vw;
+    height:0vw;
+    margin-left:40%;
+}
+
+.notes{
+width:40vw;
+height:16vw;
+background-image: url(../media/images/notebook.png);
+background-size: 18%;
+margin-top:-55vw;
+margin-left:-10%;
+}
+
+.notes h2{
+    margin-left:25%;
+    margin-top:15%;
+    font-size: xx-large;
+}
+
+
+.flex-audio{
+    display: flex;
+    margin-top:-47%;
+    width: 30vw;
+    height:30vw;
+}
+
+audio{
+    height:30vw;
+    width: 30vw;
+}
+.sounds{
+    width:70vw;
+    height:8vw;
+    /* margin-right:-10%; */
+    margin-right:60%;
+    margin-top:10%;
+
+    /* margin-top:60%; */
+}
+
+.sounds h2{
+    font-size:xx-large;
+    margin-top:3%;
+}
+
+
+
+.morning{
+   font-size:xx-large;
+   color: var(--text-color);
+   margin-left:-10%;
+   margin-top:-25%;
+}
+
+
+.bottom-buttons{
+    width:10vw;
+    height:30vw;
+    margin-left: 90%;
+    flex-direction: column;
+    margin-top: -35%;
+}
+
+.new-circle{
+    width:6vw;
+    height:6vw;
+    background-size: 80%;
+    margin-top:-40%;
+  
+}
+
+.camera-circle{
+width:6vw;
+height:6vw;
+background-size: 80%;
+margin-top:-40%;
+
+}
+
+.speaker-circle{
+width:6vw;
+height:6vw;
+background-size: 80%;
+margin-top:-40%;
+}
+
+
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
